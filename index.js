@@ -3,9 +3,10 @@ var recipes =
     flour: '3 cups' };
 
 function updateObjectWithKeyAndValue(object, key, value) {
-  var newObj = Object.assign({}, object);
-  newObj[key] = value;
-  return newObj;
+  // var newObj = Object.assign({}, object);
+  // newObj[key] = value;
+  // return newObj;
+  return Object.assign({}, object, {[key]:value});
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
