@@ -14,10 +14,10 @@ describe('Objects', function() {
         prop2: 2
       })
     })
-    
+
     it('it does not modify the original object, but rather returns a clone with the new data', function() {
       var obj = { prop: 1 }
-    
+
       updateObjectWithKeyAndValue(obj, 'prop2', 2)
 
       expect(obj['prop2']).toBe(undefined)
@@ -44,10 +44,10 @@ describe('Objects', function() {
     it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', function() {
       var obj = { prop: 1 }
       var newObj = deleteFromObjectByKey(obj, 'prop')
-      
+
       expect(newObj['prop']).toBe(undefined)
     })
-    
+
     it('does not modify the original object (it is non-destructive)', function() {
       var obj = { prop: 1 }
 
@@ -60,14 +60,14 @@ describe('Objects', function() {
     it('returns object without the delete key/value pair', function() {
       var obj = { prop: 1 }
       var newObj = destructivelyDeleteFromObjectByKey(obj, 'prop');
-      
+
       expect(newObj['prop']).toBe(undefined)
     })
-    
+
     it('modifies the original object', function() {
       var obj = { prop: 1 }
       var newObj = destructivelyDeleteFromObjectByKey(obj, 'prop');
-      
+
       expect(obj['prop']).toBe(undefined)
     })
   })
