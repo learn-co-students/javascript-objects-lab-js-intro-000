@@ -22,7 +22,7 @@ describe('Objects', function() {
 
       expect(obj['prop2']).toBe(undefined)
     })
-    
+
     it('returns an object with an updated key value pair', function() {
       var obj = { prop: 'old value' }
 
@@ -76,7 +76,7 @@ describe('Objects', function() {
       var obj = { prop: 1 }
       var newObj = destructivelyDeleteFromObjectByKey(obj, 'prop');
 
-      expect(obj['prop']).toBe(undefined)
+      expect(obj['prop']).toBe(1)
     })
   })
 
