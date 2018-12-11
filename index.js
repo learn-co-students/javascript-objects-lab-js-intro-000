@@ -1,21 +1,21 @@
-var recipes = {};
+const recipes = {}
 
-function updateObjectWithKeyAndValue(object, key, value) {
-  return Object.assign({}, object, {[key]: value });
+const updateObjectWithKeyAndValue = (obj, key, value) => {
+  return Object.assign({}, obj, {[key]: value});
 }
 
-function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
-  object[key] = value;
-  return object
+const destructivelyUpdateObjectWithKeyAndValue = (obj, key, value) => {
+  obj[key] = value;
+  return obj;
 }
 
-function deleteFromObjectByKey(object, key) {
-  var newObject = Object.assign({}, object);
-  delete newObject[key];
-  return newObject
+const deleteFromObjectByKey = (obj, key) => {
+  let newObj = Object.assign({}, obj);
+  delete newObj[key];
+  return newObj;
 }
 
-function destructivelyDeleteFromObjectByKey(object, key) {
-  delete object[key];
-  return object; 
+const destructivelyDeleteFromObjectByKey = (obj, key) => {
+  delete obj[key];
+  return obj;
 }
