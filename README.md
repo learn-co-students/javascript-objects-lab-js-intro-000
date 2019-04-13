@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab, we'll create objects and perform various operations on them. 
+In this lab, we'll create objects and perform various operations on them.
 
 ## Instructions
 
@@ -13,7 +13,7 @@ functions.
 
 ![recipes](http://i.giphy.com/l0HFjaGmrbHanFXNe.gif)
 
-Good luck!
+Good luck!w
 
 **HINT**: You might find `deleteFromObjectByKey` to be a bit hard to write non-destructively. Think about how we learned to use `Object.assign`. What happens if we do
 
