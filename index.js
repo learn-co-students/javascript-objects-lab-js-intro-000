@@ -2,19 +2,19 @@ var recipes = {
 };
 
 function updateObjectWithKeyAndValue(object, key, value){
-  return recipes;
+  return object;
 }
 
 function updateObjectWithKeyAndValue(object, key, value){
-  recipes.prop = '1';
-  recipes.prop2 = '2';
-  return recipes;
+  object.key = 'value';
+  object.key = 'value';
+  return object;
 }
 
 function updateObjectWithKeyAndValue(object, key, value){
-  return Object.assign({}, recipes, {prop: 'new value'});
+  return Object.assign({}, object, {key: 'value'});
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
-  return Object.assign(recipes, {prop: '1'}, {prop2: '2'});
+  return Object.assign(object, {key: 'value'}, {key: 'value'});
 }
