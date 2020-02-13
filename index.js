@@ -18,7 +18,6 @@ function deleteFromObjectByKey(object, key)
 }
 function destructivelyDeleteFromObjectByKey(object,key)
 {
-  var clone = Object.assign({}, object);
-  delete clone[key];
+  delete object[key]
   return object
 }
