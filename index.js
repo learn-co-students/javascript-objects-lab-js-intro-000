@@ -31,7 +31,7 @@ function  deleteFromObjectByKey(object, key){
   2) modifies the original object
 */
 function destructivelyDeleteFromObjectByKey(object, key){
-  delete object[key]
-return object
+  return delete object[key]
+//return object
 
 }
