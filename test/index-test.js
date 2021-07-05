@@ -7,10 +7,7 @@ describe('Objects', function() {
 
       expect(updateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
         prop: 1,
-        prop2: 2
-      })
-    })
-
+        prop2: 2  })  })
     it('does not modify the original object, but rather returns a clone with the new data', function() {
       var obj = { prop: 1 }
 
@@ -18,7 +15,7 @@ describe('Objects', function() {
 
       expect(obj['prop2']).toBe(undefined)
     })
-    
+
     it('returns an object with an updated key value pair', function() {
       var obj = { prop: 'old value' }
 
@@ -59,6 +56,8 @@ describe('Objects', function() {
       expect(obj['prop']).toBe(1)
     })
   })
+
+
 
   describe('destructivelyDeleteFromObjectByKey(object, key)', function() {
     it('returns object without the delete key/value pair', function() {
