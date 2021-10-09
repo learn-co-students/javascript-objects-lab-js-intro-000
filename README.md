@@ -31,8 +31,6 @@ newObj // {}
 obj // { foo: 'bar' }
 ```
 
-Hmmmmm...
-
 ## Resources
 
 - [MDN: Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
